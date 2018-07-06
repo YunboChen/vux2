@@ -77,6 +77,10 @@ let webpackConfig = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
+      },
+      {  //编译识别sass!
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"]
       }
     ]
   }
@@ -102,6 +106,10 @@ module.exports = vuxLoader.merge(webpackConfig, {
           }
         }
       }
+    },
+    {
+      name: 'less-theme',
+      path: 'src/assets/css/theme.less'
     }
   ]
 })
