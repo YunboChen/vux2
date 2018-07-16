@@ -48,6 +48,10 @@ module.exports = {
       "type": "confirm",
       "message": "Install axios?"
     },
+    "vuex": {
+      "type": "confirm",
+      "message": "Use Vuex to manage status"
+    },
     "lint": {
       "type": "confirm",
       "message": "Use ESLint to lint your code?"
@@ -119,6 +123,7 @@ module.exports = {
     "test/e2e/**/*": "e2e",
     "src/router/**/*": "router",
     "src/axios/**/*":"axios",
+    "src/store/**/*":"vuex",
   },
   "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
 };
