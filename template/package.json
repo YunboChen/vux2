@@ -24,6 +24,9 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    {{#axios}}
+    "axios": "^0.18.0",
+    {{/axios}}
     "vux": "^2.2.0",
     "fastclick": "^1.0.6",
     "postcss-aspect-ratio-mini": "^0.0.2",

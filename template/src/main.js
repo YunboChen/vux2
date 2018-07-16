@@ -8,6 +8,12 @@ import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 
+{{#axios}}
+import axios from './axios'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+Vue.use(axios){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{/axios}}
+
+
 FastClick.attach(document.body){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
